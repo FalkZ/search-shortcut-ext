@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "localforage": "^1.10.0",
+    "photon-icons": "^5.4.0"
+  },
+  "devDependencies": {
+    "webextension-polyfill": "^0.8.0"
+  }
+}
