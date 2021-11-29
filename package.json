@@ -1,9 +1,13 @@
 {
-  "dependencies": {
-    "localforage": "^1.10.0",
-    "photon-icons": "^5.4.0"
+  "scripts": {
+    "dev": "web-ext run -s src",
+    "test": "web-ext lint -s src",
+    "build": "web-ext build -s src --overwrite-dest"
   },
+  "dependencies": {},
   "devDependencies": {
+    "web-ext": "latest",
+    "photon-icons": "^5.4.0",
     "webextension-polyfill": "^0.8.0"
   }
 }

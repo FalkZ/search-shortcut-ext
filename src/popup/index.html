@@ -21,25 +21,26 @@
         }
         #keyword{
             font-weight: 700;
-           margin: 0 0.5em;
+           margin: 0;
         }
       
         .flex{
             width: 100%;
             display: grid;
-            grid-template-columns: auto 1fr auto;
+            grid-template-columns: auto 1fr auto auto;
             align-items: center;
         }
         .flex>*, #url{
             padding: 0 0.5em;
             display: inline-block;
         }
-        #add{
+        button{
             background: none;
             border: none;
             height: 100%;
             width: 32px
-}
+        }
+
         *:focus{
             outline: none;
             border-radius: 5px;
@@ -59,19 +60,23 @@
             height: 16px;
             margin: 0 auto;
         }
+        .hidden{
+            display: none
+        }
     </style>
 </head>
 <body>
 <div class="">
     <div class="flex"><span class="at">@ </span>
         <span contenteditable="true" id="keyword" tabindex="1"></span> 
-        <button id="add" tabindex="3"><img src="./new-24.svg"></img>
+        <button id="delete" tabindex="4" class="hidden"><img src="../icons/delete-24.svg"></img>
+        <button id="add" tabindex="3"><img src="../icons/new-24.svg"></img>
         </button>
     </div>
     <span contenteditable="true" id="url" tabindex="2"></span>
   
 </div>
 
-<script type="module" src="test.js"></script>
+<script type="module" src="popup.js"></script>
 </body>
 </html>

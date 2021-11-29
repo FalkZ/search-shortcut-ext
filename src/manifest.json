@@ -4,15 +4,14 @@
   "version": "1.0",
   "description": "Define custom shortcuts for websites to search",
   "icons": {
-    "48": "./add-search-engine-24.svg",
-    "96": "./add-search-engine-24.svg"
+    "48": "./icons/add-search-engine-24.svg",
+    "96": "./icons/add-search-engine-24.svg"
   },
   "omnibox": { "keyword": "@" },
   "permissions": ["bookmarks", "tabs"],
-
   "page_action": {
     "browser_style": true,
-    "default_icon": "./add-search-engine-24.svg",
+    "default_icon": "./icons/add-search-engine-24.svg",
 
     "show_matches": ["https://*/*", "http://*/*"],
     "default_title": "add @ search keyword",
